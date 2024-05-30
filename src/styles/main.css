@@ -6,6 +6,7 @@ body {
     font-size: 100%;
     line-height: 1;
     letter-spacing: .08rem;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -69,11 +70,32 @@ a {
 
 .nav-link:hover {
     text-decoration: underline;
-    color:#005689;     ;
+    color: #005689;
+    ;
     opacity: 0.7;
 }
 
-.image {
+.main-image {
     width: 100%;
     height: auto;
 }
+
+.main-image-container {
+    position: relative;
+}
+
+.main-image-text {
+    width: 1050px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.text-item {
+    padding: 0.25em 0;
+}
+
