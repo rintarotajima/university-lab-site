@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="三重大学生物資源学部共生環境学科環境システム工学教育コースにある研究室です">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="https://www.bio.mie-u.ac.jp/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
     <title>エネルギー利用工学研究室</title>
@@ -22,16 +27,16 @@
             </a>
             <nav class="nav">
                 <ul class="nav-menu">
-                    <li class="nav-item"><a class="nav-link" href="#Home">ホーム</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#About">研究内容</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Member">メンバー</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Lablife">活動履歴</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">ホーム</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">研究内容</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#member">メンバー</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lablife">活動履歴</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section id="Home" class="main-image-container">
+        <section id="home" class="main-image-container">
             <img class="main-image" src="assets/images/main-image.jpg" alt="メイン画像">
             <div class="main-image-text">
                 <p>三重大学生物資源学部共生環境学科</p>
@@ -39,9 +44,114 @@
                 <p>エネルギー利用工学研究室</p>
             </div>
         </section>
-        <section id="About"></section>
-        <section id="Member"></section>
-        <section id="Lablife"></section>
+        <section class="section__wrapper about" id="about">
+            <h2 class="section__title">About</h2>
+            <p class="section__text">
+                当研究室では、植物バイオマスを利用した生分解可能なバイオマス素材の開発やオフロード車両の走行性向上と食料生産システムの自動化についての研究を行っています。
+            </p>
+        </section>
+        <section class="section__wrapper" id="member">
+            <h2 class="section__title">Member</h2>
+            <div class="professors">
+                <h3>教員</h3>
+                <div class="card__wrapper">
+                    <article class="card">
+                        <div class="card__header">
+                            <figure>
+                                <img class="card__image" src="./assets/images/professor1.jpg" alt="王先生の顔画像">
+                            </figure>
+                            <h4 class="card__title">王 秀崙</h4>
+                        </div>
+                        <div class="card__body">
+                            <p class="card__text">研究内容</p>
+                            <ul>
+                                <li class="card__item">バイオボードの開発</li>
+                                <li class="card__item">オフロード車両の走行性向上について</li>
+                                <li class="card__item">生分解可能な農業用マルチシートの開発</li>
+                                <li class="card__item">植物工場における溶液栽培用培地の開発</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__header">
+                            <figure class="figure__thumbnail">
+                                <img class="card__image" src="./assets/images/professor2.jpg" alt="呉先生の顔画像">
+                            </figure>
+                            <h4 class="card__title">呉 婷婷</h4>
+                        </div>
+                        <div class="card__body">
+                            <p class="card__text">研究内容</p>
+                            <ul>
+                                <li class="card__item">バイオボードの開発</li>
+                                <li class="card__item">植物工場における溶液栽培用培地の開発</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="students">
+                <h3>学生</h3>
+                <div class="students__area">
+                    <div class="students-group">
+                        <h4>Doctor</h4>
+                        <p>劉 韬</p>
+                        <p>徐 順豪</p>
+                        <p>蔡 子逸</p>
+                        <p>Halidi Ally</p>
+                        <p>範 海倫</p>
+                        <p>温 家鑫</p>
+                    </div>
+                    <div class="students-group">
+                        <h4>Master</h4>
+                        <p>下岡 旦典</p>
+                        <p>馬 雅廸</p>
+                        <p>李 楠</p>
+                        <p>馬 俊驍</p>
+                        <p>坂口響</p>
+                    </div>
+                    <div class="students-group">
+                        <h4>Bachelor</h4>
+                        <p>田嶋 凛太朗</p>
+                        <p>田中 智樹</p>
+                        <p>桝内 雄成</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section__wrapper" id="lablife">
+            <h2 class="section__title">LabLife</h2>
+            <div class="lablife-content">
+                <article>
+                    <section>
+                        <p>当研究室は、毎週水曜日に昼食会という研究室に所属しているメンバーで昼食を食べたり、毎週金曜日にゼミで研究の進捗を報告しています。</p>
+                    </section>
+                    <div class="news">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>2024</td>
+                                    <td>昼食会</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+                <aside>
+                    <div class="contact">
+                        <h3>住所</h3>
+                    </div>
+                    <!-- /.contact -->
+                    <div class="link">
+                        <h3>リンク</h3>
+                    </div>
+                    <!-- /.link -->
+                </aside>
+            </div>
+        </section>
     </main>
 </body>
 
