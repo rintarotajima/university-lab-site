@@ -2,7 +2,7 @@ body {
     background-color: #f7f7f7;
     box-sizing: border-box;
     color: #393e46;
-    font-family: 'Arial', "Yu Gothic", sans-serif;
+    font-family: "Noto sans JP", 'Arial', sans-serif;
     font-size: 100%;
     line-height: 1;
     letter-spacing: .08rem;
@@ -14,7 +14,7 @@ a {
 }
 
 .header {
-    background-color: #d5eeff;
+    background-color: #f7f7f7;
     width: 100%;
     height: 100px;
 }
@@ -28,6 +28,7 @@ a {
 
 .header-logo {
     margin-left: 6em;
+    font-family: 'Noto sans JP';
 }
 
 .header-logo:hover {
@@ -46,6 +47,7 @@ a {
 
 .site-sub-paragraph {
     font-size: .5em;
+    font-family: 'Arial';
     margin-left: 0.5em;
 }
 
@@ -65,17 +67,23 @@ a {
 
 .nav-link {
     font-size: 1.125rem;
+    font-family: 'Noto sans JP';
 }
 
 .nav-link:hover {
     text-decoration: underline;
-    color:#005689;     ;
+    color: #005689;
+    ;
     opacity: 0.7;
 }
 
+
+/* メイン */
+
 .main-image {
     width: 100%;
-    height: auto;
+    height: 600px;
+    object-fit: cover;
 }
 
 .main-image-container {
@@ -96,3 +104,144 @@ a {
 .text-item {
     padding: 0.25em 0;
 }
+
+/* セクション */
+.section__wrapper {
+    width: 1080px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.section__title {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.about {
+    height: 180px;
+}
+
+.section__text {
+    font-size: 20px;
+    padding: 30px;
+}
+.professors {
+    margin-top: 15px;
+    padding: 20px;
+}
+.professors h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+}
+.card {    
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+.card__header {
+    padding: 20px 20px 10px;
+}
+
+.card__image {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.card__title {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card__body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card__text {
+    text-align: center;
+    font-size: 18px;
+    padding: 0 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.card__text::before,
+.card__text::after {
+    content: "~";
+    color: #666;
+    font-size: 1.2em;
+    line-height: .8;
+    position: absolute;
+}
+.card__text::before {
+    left: 0;
+    transform: translateX(-100%);
+}
+.card__text::after {
+    right: 0;
+    transform: translateX(100%);
+}
+.card__item {
+    text-align: left;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+.students {
+    margin-top: 15px;
+}
+.students h3 {
+    text-align: center;
+}
+.students__area {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.students-group {
+    text-align: center;
+    padding: 20px;
+}
+.students-group h4 {
+    margin-bottom: 20px;
+}
+.students-group p {
+    padding: 2px;
+}
+
+
+
+
+
+
+
+
+
+/* article {
+    width: 74%;
+}
+
+aside {
+    width: 26%;
+    text-align: center;
+} */
+
+.lablife-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
