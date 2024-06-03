@@ -130,9 +130,14 @@ a {
     margin-top: 15px;
     padding: 20px;
 }
-.professors h3 {
+.professors__title {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.professors__title span {
+    padding-bottom: 1px;
+    border-bottom: 2px solid #005689;
 }
 .card__wrapper {
     display: flex;
@@ -201,13 +206,17 @@ a {
 }
 
 .students {
-    margin-top: 15px;
+    margin-top: 30px;
 }
-.students h3 {
+.students__title {
     text-align: center;
 }
+.students__title span {
+    padding-bottom: 1px;
+    border-bottom: 2px solid #005689;
+}
 .students__area {
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-around;
 }
@@ -219,7 +228,7 @@ a {
     margin-bottom: 20px;
 }
 .students-group p {
-    padding: 2px;
+    padding: 5px;
 }
 
 
