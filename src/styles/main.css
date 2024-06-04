@@ -13,6 +13,11 @@ a {
     color: #393e46;
 }
 
+li {
+    list-style: none;
+}
+
+
 .header {
     background-color: #f7f7f7;
     width: 100%;
@@ -126,10 +131,12 @@ a {
     font-size: 20px;
     padding: 30px;
 }
+
 .professors {
     margin-top: 15px;
     padding: 20px;
 }
+
 .professors__title {
     text-align: center;
     margin-bottom: 30px;
@@ -139,14 +146,16 @@ a {
     padding-bottom: 1px;
     border-bottom: 2px solid #005689;
 }
+
 .card__wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 100px;
     justify-content: center;
 }
-.card {    
-    background-color: white;
+
+.card {
+    background-color: rgb(241, 237, 237);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
@@ -191,14 +200,17 @@ a {
     line-height: .8;
     position: absolute;
 }
+
 .card__text::before {
     left: 0;
     transform: translateX(-100%);
 }
+
 .card__text::after {
     right: 0;
     transform: translateX(100%);
 }
+
 .card__item {
     text-align: left;
     padding: 5px 0;
@@ -208,49 +220,133 @@ a {
 .students {
     margin-top: 30px;
 }
+
 .students__title {
     text-align: center;
 }
+
 .students__title span {
     padding-bottom: 1px;
     border-bottom: 2px solid #005689;
 }
+
 .students__area {
     margin-top: 10px;
     display: flex;
     justify-content: space-around;
 }
+
 .students-group {
     text-align: center;
     padding: 20px;
 }
+
 .students-group h4 {
     margin-bottom: 20px;
 }
+
 .students-group p {
     padding: 5px;
 }
 
-
-
-
-
-
-
-
-
-/* article {
-    width: 74%;
-}
-
-aside {
-    width: 26%;
-    text-align: center;
-} */
-
 .lablife-content {
-    display: flex;
-    justify-content: space-between;
+    margin-top: 30px;
 }
 
+.lablife__text {
+    font-size: 18px;
+    padding: 22px;
+    margin-bottom: 40px;
+}
 
+.slide__wrapper {
+    width: 520px;
+    height: 390px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.prev {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 25px;
+    bottom: 50%;
+    z-index: 10;
+    cursor: pointer;
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    transform: rotate(-135deg) translateY(-50%);
+}
+
+.next {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 25px;
+    bottom: 50%;
+    z-index: 10;
+    cursor: pointer;
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    transform: rotate(45deg) translateY(50%);
+}
+
+.indicator {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    column-gap: 15px;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+
+.indicator li {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px #000 solid;
+    cursor: pointer;
+}
+
+.indicator li:first-of-type {
+    background-color: #000;
+}
+
+.slide {
+    width: 300%;
+    height: 100%;
+    display: flex;
+    transition: all 0.3s;
+}
+
+.slide div {
+    width: 33.3%;
+    height: 100%;
+}
+
+.slide1 {
+    /* スライドさせるために必要なクラス */
+    transform: translateX(0);
+}
+
+.slide2 {
+    /* スライドさせるために必要なクラス */
+    transform: translateX(-33.33%);
+}
+
+.slide3 {
+    /* スライドさせるために必要なクラス */
+    transform: translateX(-66.66%);
+}
+
+.slide__image {
+    width: 520px;
+    height: 390px;
+    object-fit: cover;
+}
