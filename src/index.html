@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <link rel="icon" href="https://www.bio.mie-u.ac.jp/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
     <title>エネルギー利用工学研究室</title>
 </head>
@@ -20,7 +21,7 @@
 <body>
     <header class="header">
         <div class="header-area">
-            <a href="#" class="header-logo">
+            <a onclick="window.location.reload(true);" href="#" class="header-logo">
                 <span class="site-logo">三重大学生物資源学部共生環境学科環境システム工学教育コース/講座</span>
                 <p class="site-paragraph">エネルギー利用工学研究室<span class="site-sub-paragraph">Energy Utilization Engineering
                         Lab</span></p>
@@ -122,9 +123,8 @@
             <h2 class="section__title">LabLife</h2>
             <div class="lablife-content">
                 <p class="lablife__text">
-                    研究室の特徴として、週1回のゼミ以外は、学生の自主性に任されているため、他の研究室より自由度が高いことが挙げられます。
-                    さらに、留学生が多いため、日本語以外の言語での会話で盛り上がっています。
-                    また、講座のイベントにも参加しています。
+                    研究室の特徴として、週1回のゼミ以外は、学生の自主性に任されています。ゆえに、他の研究室より自由度が高いことが挙げられます。
+                    また、定期的な講座のイベントにも参加しています。
                 </p>
                 <div class="slide__wrapper">
                     <div id="slide" class="slide">
@@ -149,6 +149,17 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <ul class="footer-list">
+                <li><a class="external-link" href="https://www.mie-u.ac.jp/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>三重大学</a></li>
+                <li><a class="external-link" href="https://www.bio.mie-u.ac.jp/academics/undergraduate-15/dep02/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>共生環境学科</a></li>
+                <li><a class="external-link" href="https://www.bio.mie-u.ac.jp/academics/master-15/dep02/course05/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>環境システム工学教育コース</a></li>
+            </ul>
+            <p class="footer-copyright"><small>© 2024 Energy Utilization Engineering Lab.</small></p>
+        </div>
+        <!-- /.footer-container -->
+    </footer>
 </body>
 
 </html>
