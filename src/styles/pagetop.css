@@ -1,0 +1,19 @@
+#pageTopButton {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 35px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+#pageTopButton:hover {
+    background-color: #005689;
+}
