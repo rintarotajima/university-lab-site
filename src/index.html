@@ -20,29 +20,31 @@
 
 <body>
     <header class="header">
-        <div class="header-area">
-            <a onclick="window.location.reload(true);" href="#" class="header-logo">
-                <span class="site-logo">三重大学生物資源学部共生環境学科環境システム工学教育コース/講座</span>
-                <p class="site-paragraph">エネルギー利用工学研究室<span class="site-sub-paragraph">Energy Utilization Engineering
-                        Lab</span></p>
-            </a>
-            <nav class="nav">
-                <ul class="nav-menu">
-                    <li class="nav-item"><a class="nav-link" href="#home">ホーム</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">研究内容</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#member">メンバー</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#lablife">活動内容</a></li>
-                </ul>
-            </nav>
+        <a href="#" class="header-logo" id="reloadButton">
+            <span class="site-logo">三重大学 生物資源学部 共生環境学科 環境システム工学教育コース</span>
+            <p class="site-text-paragraph">エネルギー利用工学研究室</p>
+        </a>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+        <nav class="nav">
+            <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="#home">ホーム</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">研究内容</a></li>
+                <li class="nav-item"><a class="nav-link" href="#member">メンバー</a></li>
+                <li class="nav-item"><a class="nav-link" href="#lablife">活動内容</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section id="home" class="main-image-container">
             <img class="main-image" src="assets/images/main-image.jpg" alt="メイン画像">
             <div class="main-image-text">
-                <p>三重大学生物資源学部共生環境学科</p>
+                <p class="text-item">三重大学生物資源学部共生環境学科</p>
                 <p class="text-item">環境システム工学教育コース</p>
-                <p>エネルギー利用工学研究室</p>
+                <p class="text-item">エネルギー利用工学研究室</p>
             </div>
         </section>
         <section class="section__wrapper about" id="about">
@@ -152,12 +154,15 @@
     <footer class="footer">
         <div class="footer-container">
             <ul class="footer-list">
-                <li><a class="external-link" href="https://www.mie-u.ac.jp/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>三重大学</a></li>
-                <li><a class="external-link" href="https://www.bio.mie-u.ac.jp/academics/undergraduate-15/dep02/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>共生環境学科</a></li>
-                <li><a class="external-link" href="https://www.bio.mie-u.ac.jp/academics/master-15/dep02/course05/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>環境システム工学教育コース</a></li>
+                <li><a class="external-link" href="https://www.mie-u.ac.jp/" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i>三重大学</a></li>
+                <li><a class="external-link" href="https://www.bio.mie-u.ac.jp/academics/undergraduate-15/dep02/"
+                        target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>共生環境学科</a></li>
+                <li><a class="external-link" href="https://www.bio.mie-u.ac.jp/academics/master-15/dep02/course05/"
+                        target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>環境システム工学教育コース</a></li>
             </ul>
             <p class="footer-copyright"><small>© 2024 Energy Utilization Engineering Lab.</small></p>
-        </div>    
+        </div>
     </footer>
     <button id="pageTopButton"><i class="fa-solid fa-arrow-up"></i></button>
 </body>
