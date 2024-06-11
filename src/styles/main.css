@@ -30,7 +30,6 @@ ul {
     height: auto;
     padding: 15px 0;
     position: relative;
-    z-index: 1000;
 }
 
 .header-logo {
