@@ -33,17 +33,11 @@ ul {
     z-index: 1000;
 }
 
-
 .header-logo {
     margin-left: 30px;
     font-family: 'Noto sans JP';
     font-weight: bold;
     color: #333;
-}
-
-.header-logo:hover {
-    color: #005689;
-    opacity: 0.7;
 }
 
 .site-logo {
@@ -56,27 +50,7 @@ ul {
 .site-text-paragraph {
     font-size: 1.6em;
     line-height: 1.2;
-
 }
-
-@media (max-width: 767px) {
-    .header {
-        padding: 10px 0; /* スマートフォンでさらにパディングを減らす */
-    }
-
-    .header-logo {
-        margin-left: 1em; /* 左マージンを減らしてスペースを確保 */
-    }
-
-    .site-logo {
-        font-size: 1em; /* スマートフォンでさらにフォントサイズを小さく */
-    }
-
-    .site-text-paragraph {
-        font-size: 1.2em; /* スマートフォンでさらにフォントサイズを小さく */
-    }
-}
-
 
 .hamburger-menu {
     display: none;
@@ -86,22 +60,23 @@ ul {
     top: 50%;
     transform: translateY(-50%);
     z-index: 1001;
-    width: 30px;
-    height: 22px;
 }
 
 .hamburger-menu span {
     display: block;
-    width: 25px;
-    height: 4px;
-    background-color: #333;
-    border-radius: 2px;
-    margin: 0.5em 0;
+    width: 30px;
+    height: 3px;
+    background-color: #393e46;
+    border-radius: 3px;
+    margin: 6px 0;
     transition: 0.4s;
+    position: relative;
 }
 
 .hamburger-menu.active span:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 10px);
+    transform: rotate(-45deg);
+    top: 9px;
+    left: 6px;
 }
 
 .hamburger-menu.active span:nth-child(2) {
@@ -109,9 +84,10 @@ ul {
 }
 
 .hamburger-menu.active span:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -10px) ;
-}
-
+    transform: rotate(45deg);
+    top: -9px;
+    left: 6px;
+}  
 
 .nav {
     margin-right: 20px;
@@ -127,9 +103,8 @@ ul {
 }
 
 .nav-link {
-    font-size: 1.2em;
-    padding: 0.3em 0.6em;
-    font-family: 'Noto sans JP', sans-serif;
+    font-size: 1.5em;
+    padding: 3px 6px;
     font-weight: bold;
     color: #333;
     white-space: nowrap;
@@ -142,6 +117,12 @@ ul {
 }
 
 @media (max-width: 768px) {
+    .header-logo {
+        flex: 0 0 70%;
+        max-width: 70%;
+        margin-left: 15px;
+    }
+
     .hamburger-menu {
         display: block;
     }
@@ -149,14 +130,11 @@ ul {
     .nav {
         position: fixed;
         top: 0px;
-        right: -70%;
-        width: 30%;
+        right: -50%;
+        width: 40%;
         background-color: #f1f1f1;
         z-index: 999;
         transition: right 0.3s ease-in-out;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         padding: 20px;
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
         margin-right: 0;
@@ -168,11 +146,22 @@ ul {
 
     .nav-menu {
         flex-direction: column;
+        margin-top: 3px;
     }
 
     .nav-item {
-        margin: 15px 0;
         text-align: center;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .hamburger-menu {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1001;
     }
 }
 
@@ -180,7 +169,6 @@ ul {
     .header {
         max-width: 1080px;
         margin: 0 auto;
-        height: 100px;
     }
 
     .site-logo {
