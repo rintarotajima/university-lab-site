@@ -1,45 +1,35 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const reloadButton = document.querySelector('#reloadButton');
-  reloadButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.location.reload(true);
-  })
-})
 
-document.addEventListener('DOMContentLoaded', function() {
-  var hamburgerMenu = document.querySelector('.hamburger-menu');
-  var nav = document.querySelector('.nav');
-  var navLinks = document.querySelectorAll('.nav-link');
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const nav = document.querySelector('.nav');
 
-  // ハンバーガーメニューのクリックイベント
-  hamburgerMenu.addEventListener('click', function() {
-      this.classList.toggle('active');
-      nav.classList.toggle('show');
-  });
+// ハンバーガーメニューのクリックイベント
+hamburgerMenu.addEventListener('click', function () {
+  this.classList.toggle('active');
+  nav.classList.toggle('show');
+});
+  
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach(function (link) {
+  link.addEventListener('click', function (event) {
+    // リンクのデフォルトの動作（ページ内リンクへのスクロール）を維持
+    // event.preventDefault();
 
-  // 各ナビゲーションリンクにクリックイベントを追加
-  navLinks.forEach(function(link) {
-      link.addEventListener('click', function(event) {
-          // リンクのデフォルトの動作（ページ内リンクへのスクロール）を維持
-          // event.preventDefault();
+    // ハンバーガーメニューを非アクティブ化
+    hamburgerMenu.classList.remove('active');
 
-          // ハンバーガーメニューを非アクティブ化
-          hamburgerMenu.classList.remove('active');
-          
-          // ナビゲーションメニューを非表示
-          nav.classList.remove('show');
-          
-          // スムーズスクロールの実装（オプション）
-          var targetId = this.getAttribute('href').substring(1);
-          var targetElement = document.getElementById(targetId);
-          if (targetElement) {
-              event.preventDefault();
-              targetElement.scrollIntoView({
-                  behavior: 'smooth',
-                  block: 'start'
-              });
-          }
+    // ナビゲーションメニューを非表示
+    nav.classList.remove('show');
+
+    // スムーズスクロールの実装（オプション）
+    var targetId = this.getAttribute('href').substring(1);
+    var targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      event.preventDefault();
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
       });
+    }
   });
 });
 
