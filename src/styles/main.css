@@ -20,7 +20,6 @@ ul {
     list-style: none;
 }
 
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -157,7 +156,6 @@ ul {
     margin-inline: auto;
 }
 
-
 @media (min-width: 768px) {
     .header-logo {
         margin-left: 30px;
@@ -227,22 +225,6 @@ ul {
     }
 }
 
-.section__title {
-    text-align: center;
-    font-size: 1.8rem;
-}
-
-.about {
-    height: 200px;
-}
-
-.section__text {
-    font-size: 20px;
-    padding: 30px;
-}
-
-
-
 @media (min-width: 1024px) {
     .header {
         max-width: 1080px;
@@ -300,6 +282,20 @@ ul {
         overflow: hidden;
         margin: 0 auto;
     }
+}
+
+.section__title {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.about {
+    height: 200px;
+}
+
+.section__text {
+    font-size: 20px;
+    padding: 30px;
 }
 
 .professors {
