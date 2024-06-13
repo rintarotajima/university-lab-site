@@ -20,7 +20,6 @@ ul {
     list-style: none;
 }
 
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -128,6 +127,35 @@ ul {
     font-weight: bold;
 }
 
+.main-image-container {
+    position: relative;
+}
+
+.main-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.main-image-text {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px;
+}
+
+
+.text-item {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px;
+    inline-size: fit-content;
+    margin-inline: auto;
+}
+
 @media (min-width: 768px) {
     .header-logo {
         margin-left: 30px;
@@ -141,7 +169,6 @@ ul {
     .site-text-paragraph {
         font-size: 2.3em;
     }
-
 
     .hamburger-menu {
         display: none;
@@ -169,7 +196,7 @@ ul {
     .nav-item {
         margin: 10px;
     }
-    
+
     .nav-link {
         font-size: 1.8em;
         font-weight: bold;
@@ -183,8 +210,16 @@ ul {
         opacity: 0.7;
     }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
 
+@media (min-width: 768px) and (max-width: 1023px) {
+    .main-image {
+        height: 450px;
+    }
+
+    .text-item {
+        font-size: 2.5rem;
+        padding: 10px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -219,6 +254,15 @@ ul {
         font-size: 1.8rem;
     }
 
+    .main-image {
+        height: 600px;
+    }
+
+    .text-item {
+        font-size: 3.5rem;
+        padding: 20px;
+    }
+
     .section__wrapper {
         max-width: 1080px;
         margin: 0 auto;
@@ -237,38 +281,6 @@ ul {
     }
 }
 
-
-
-.main-image-container {
-    position: relative;
-}
-
-
-.main-image {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
-
-.main-image-text {
-    width: 60%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 8px;
-}
-
-.text-item {
-    font-size: 3rem;
-    color: #fff;
-    padding: 10px;
-    inline-size: fit-content;
-    margin-inline: auto;
-}
-
-
-
 .section__title {
     text-align: center;
     font-size: 1.8rem;
@@ -282,8 +294,6 @@ ul {
     font-size: 20px;
     padding: 30px;
 }
-
-
 
 .professors {
     margin: 15px 0;
