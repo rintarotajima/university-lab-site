@@ -178,6 +178,98 @@ ul {
     padding: 30px;
 }
 
+.member-title {
+    padding-top: 20px;
+}
+
+.professors {
+    margin: 15px 0;
+    padding: 25px 50px;
+}
+
+.professors-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.professors-title span {
+    font-size: 1.5em;
+    padding-bottom: 1px;
+    border-bottom: 2px solid #005689;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ececec;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+.card-header {
+    padding: 20px 20px 10px;
+}
+
+.card-image {
+    width: 60%;
+    height: 250px;
+    padding-top: 15px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card-body {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.card-text {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.card-text::before,
+.card-text::after {
+    content: "~";
+    font-size: 1.2em;
+    position: absolute;
+    line-height: 0.9;
+}
+
+.card-text::before {
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.card-text::after {
+    right: 0;
+    transform: translateX(100%);
+}
+
+.card-item {
+    font-size: 1.4em;
+    text-align: left;
+    list-style: circle;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+
 @media (min-width: 768px) {
     .header-logo {
         margin-left: 30px;
@@ -230,6 +322,11 @@ ul {
         text-decoration: underline;
         color: #005689;
         opacity: 0.7;
+    }
+
+    .card-wrapper {
+        flex-wrap: nowrap;
+        gap: 80px;
     }
 }
 
@@ -310,6 +407,10 @@ ul {
         line-height: 1.5;
     }
 
+    .card-wrapper {
+        gap: 100px;
+    }
+
     .slide__wrapper {
         width: 520px;
         height: 390px;
@@ -320,91 +421,6 @@ ul {
 }
 
 
-.professors {
-    margin: 15px 0;
-    padding: 20px;
-}
-
-.professors__title {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.professors__title span {
-    padding-bottom: 1px;
-    border-bottom: 2px solid #005689;
-}
-
-.card__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 100px;
-    justify-content: center;
-}
-
-.card {
-    background-color: #ececec;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-}
-
-.card__header {
-    padding: 20px 20px 10px;
-}
-
-.card__image {
-    width: 50%;
-    height: 250px;
-    padding-top: 15px;
-    margin: 0 auto;
-    object-fit: cover;
-}
-
-.card__title {
-    font-size: 1.2em;
-    color: #333;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.card__body {
-    padding: 20px;
-    text-align: center;
-}
-
-.card__text {
-    text-align: center;
-    font-size: 18px;
-    padding: 0 5px;
-    display: inline-block;
-    position: relative;
-}
-
-.card__text::before,
-.card__text::after {
-    content: "~";
-    color: #666;
-    font-size: 1.2em;
-    line-height: .8;
-    position: absolute;
-}
-
-.card__text::before {
-    left: 0;
-    transform: translateX(-100%);
-}
-
-.card__text::after {
-    right: 0;
-    transform: translateX(100%);
-}
-
-.card__item {
-    text-align: left;
-    list-style: circle;
-    padding: 5px 0;
-    margin: 5px 0;
-}
 
 
 
