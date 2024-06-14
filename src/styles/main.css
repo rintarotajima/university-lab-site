@@ -183,7 +183,7 @@ ul {
 }
 
 .professors {
-    margin: 15px 0;
+    margin: 15px 0 10px 0;
     padding: 25px 50px;
 }
 
@@ -270,22 +270,22 @@ ul {
 }
 
 .students {
-    margin: 15px 0;
-    padding: 10px;
+    margin: 10px 0 15px 0;
+    padding: 5px 10px 10px;
 }
 
-.students__title {
+.students-title {
     text-align: center;
     margin: 30px 0;
 }
 
-.students__title span {
+.students-title span {
     font-size: 1.5em;
     padding-bottom: 1px;
     border-bottom: 2px solid #005689;
 }
 
-.students__area {
+.students-area {
     margin-top: 10px;
 }
 
@@ -364,13 +364,15 @@ ul {
         gap: 80px;
     }
 
-    .students__title span {
+    .professors-title span {
         font-size: 1.6em;
-        padding-bottom: 1px;
-        border-bottom: 2px solid #005689;
     }
 
-    .students__area {
+    .students-title span {
+        font-size: 1.6em;
+    }
+
+    .students-area {
         display: flex;
         justify-content: space-around;
     }
