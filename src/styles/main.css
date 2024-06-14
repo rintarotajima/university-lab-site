@@ -269,6 +269,41 @@ ul {
     margin: 5px 0;
 }
 
+.students {
+    margin: 15px 0;
+    padding: 10px;
+}
+
+.students__title {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.students__title span {
+    font-size: 1.5em;
+    padding-bottom: 1px;
+    border-bottom: 2px solid #005689;
+}
+
+.students__area {
+    margin-top: 10px;
+}
+
+.students-group {
+    text-align: center;
+    padding: 10px;
+}
+
+.students-group h4 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.students-group p {
+    font-size: 1.2em;
+    padding: 6px;
+}
+
 
 @media (min-width: 768px) {
     .header-logo {
@@ -327,6 +362,27 @@ ul {
     .card-wrapper {
         flex-wrap: nowrap;
         gap: 80px;
+    }
+
+    .students__title span {
+        font-size: 1.6em;
+        padding-bottom: 1px;
+        border-bottom: 2px solid #005689;
+    }
+
+    .students__area {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .students-group h4 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+    
+    .students-group p {
+        font-size: 1.2em;
+        padding: 5px;
     }
 }
 
@@ -418,39 +474,6 @@ ul {
         overflow: hidden;
         margin: 0 auto;
     }
-}
-
-
-
-
-
-.students__title {
-    text-align: center;
-    margin: 30px 0;
-}
-
-.students__title span {
-    padding-bottom: 1px;
-    border-bottom: 2px solid #005689;
-}
-
-.students__area {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.students-group {
-    text-align: center;
-    padding: 20px;
-}
-
-.students-group h4 {
-    margin-bottom: 20px;
-}
-
-.students-group p {
-    padding: 5px;
 }
 
 .lablife-content {
