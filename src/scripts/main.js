@@ -12,7 +12,7 @@ const navLinks = document.querySelectorAll('.nav-link');
 navLinks.forEach(function (link) {
   link.addEventListener('click', function (event) {
     // リンクのデフォルトの動作（ページ内リンクへのスクロール）を維持
-    // event.preventDefault();
+    event.preventDefault();
 
     // ハンバーガーメニューを非アクティブ化
     hamburgerMenu.classList.remove('active');
@@ -21,8 +21,8 @@ navLinks.forEach(function (link) {
     nav.classList.remove('show');
 
     // スムーズスクロールの実装（オプション）
-    var targetId = this.getAttribute('href').substring(1);
-    var targetElement = document.getElementById(targetId);
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
     if (targetElement) {
       event.preventDefault();
       targetElement.scrollIntoView({
