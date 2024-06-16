@@ -1,19 +1,26 @@
-/* #pageTopButton {
+#pageTopButton {
     display: none;
     position: fixed;
-    bottom: 70px;
-    right: 35px;
+    bottom: 50px;
+    right: 5px;
     z-index: 99;
-    font-size: 20px;
     border: none;
     outline: none;
     background-color: #555;
     color: white;
     cursor: pointer;
-    padding: 20px;
+    padding: 12px;
     border-radius: 50%;
 }
 
 #pageTopButton:hover {
     background-color: #005689;
-} */
+}
+
+@media (min-width: 1024px) {
+    #pageTopButton {
+        right: 15px;
+        font-size: 1.5em;
+        padding: 18px;
+    }
+}
