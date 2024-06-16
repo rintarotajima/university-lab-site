@@ -6,12 +6,20 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
+        publicPath: '/', 
     },
     module: {
         rules: [
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
+            },
+            {
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: './assets/images/[hash][ext][query]'
+                }
             },
         ],
     },
