@@ -6,7 +6,7 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: '/', 
+        publicPath: '/university-lab-site/', 
     },
     module: {
         rules: [
@@ -16,10 +16,14 @@ module.exports = {
             },
             {
                 test: /\.(png|jpe?g|gif|svg)$/i,
-                type: 'asset/resource',
-                generator: {
-                    filename: './assets/images/[hash][ext][query]'
-                }
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: './assets/images/[name].[ext]'
+                        }
+                    }
+                ]
             },
         ],
     },
