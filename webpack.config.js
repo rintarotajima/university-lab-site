@@ -1,12 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     entry: './src/index.js',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
+        publicPath: ''
     },
     module: {
         rules: [
@@ -14,14 +15,6 @@ module.exports = {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
             },
-            {
-                test: /\.(png|jpe?g|gif)$/i,
-                loader: 'file-loader',
-                options: {
-                  name: '[name].[ext]',
-                  outputPath: 'images'
-                }
-              }
         ],
     },
     plugins: [
@@ -30,15 +23,15 @@ module.exports = {
             filename: 'index.html',
             inject: 'body',
         }),
-        new CopyWebpackPlugin({
+        new CopyPlugin({
             patterns: [
-                { from: 'src/assets/images', to: 'images' }
-            ]
+                { from: 'src/assets/images', to: 'assets/images' }
+              ]
         })
     ],
     devServer: {
         static: {
-            directory: path.join(__dirname, 'src'),
+            directory: path.join(__dirname, 'dist'),
         },
         compress: true,
         port: 9000,
