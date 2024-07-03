@@ -11,7 +11,25 @@
 
 ## 使用技術
 [![使用技術](https://skillicons.dev/icons?i=html,css,js,nodejs,webpack,git,github,vscode)](https://skillicons.dev)
-## インストール
 
+## セットアップ
+1. Node.jsプロジェクトとして初期化
+   
+`node init --yes`
 
+2. webpackのインストール
+- webpack本体
+  
+`npm install --save-dev webpack`
 
+- webpackをCLIから利用するために必要なツール
+
+`npm install --save-dev webpack-cli`
+
+3. 開発用サーバーの起動
+
+`npm run  start`
+
+4. ビルド
+
+`npm run build`
