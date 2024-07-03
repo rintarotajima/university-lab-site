@@ -28,7 +28,7 @@
 
 3. 開発用サーバーの起動
 
-`npm run  start`
+`npm run start`
 
 4. ビルド
 
