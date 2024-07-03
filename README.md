@@ -1,13 +1,17 @@
 # エネルギー利用工学研究室サイト
-https://rintarotajima.github.io/university-lab-site
-
 ## 概要
-HTML, CSS, JavaScriptを用いた大学の研究室サイトで、Github上でホスティングしています。
+<p>このプロジェクトは、HTML、CSS、JavaScriptを使用して、作成した大学の研究室サイトです。</p>
+<p>webpackを使用して、バンドル & 管理しています。</p>
 
 ## 内容
 - Home (トップページ)
 - About (研究室について)
 - Member (教員・学生紹介)
 - Lablife (活動内容)
+
+## 使用技術
+
+## インストール
+
 
 
