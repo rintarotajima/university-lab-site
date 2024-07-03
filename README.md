@@ -10,7 +10,7 @@
 - Lablife (活動内容)
 
 ## 使用技術
-
+[![使用技術](https://skillicons.dev/icons?i=html,css,js,nodejs,webpack,git,github,vscode)](https://skillicons.dev)
 ## インストール
 
 
